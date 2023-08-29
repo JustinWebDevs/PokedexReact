@@ -21,7 +21,7 @@ export default function PokeForm({ findPokemon }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input value={pokemon} onChange={handleChange} />
+      <input value={pokemon} onChange={handleChange} placeholder="Escribe un pokemon con cadena evolutiva"/>
     </form>
   );
 }

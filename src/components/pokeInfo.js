@@ -13,7 +13,7 @@ export default function PokeInfo({ info, preEvolution, evolution }) {
           alt={preEvolution.name}
           title={preEvolution.name}
         />
-        <h2>{preEvolution.name}</h2>
+        <h2>{preEvolution.name[0].toUpperCase() + preEvolution.name.substring(1)}</h2>
       </div>
     );
   };
@@ -26,7 +26,7 @@ export default function PokeInfo({ info, preEvolution, evolution }) {
           alt={evolution.name}
           title={evolution.name}
         />
-        <h2>{evolution.name}</h2>
+        <h2>{evolution.name[0].toUpperCase() + evolution.name.substring(1)}</h2>
       </div>
     );
   };
